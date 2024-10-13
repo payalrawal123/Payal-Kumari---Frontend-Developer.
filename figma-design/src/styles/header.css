@@ -1,0 +1,40 @@
+/* Fullscreen container that holds the video and content */
+body{
+  margin: 0;
+  padding: 0;
+}
+.header-container {
+  position: relative;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow: hidden; /* Ensure no overflow outside of the container */
+}
+
+/* Styles for the full-screen background video */
+.background-video {
+  position: absolute; /* Allow the video to cover the entire container */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ensure video covers full width */
+  height: 100vh; /* Ensure video covers full height */
+  object-fit: cover; /* Scale video to cover container while maintaining aspect ratio */
+  z-index: -1; /* Place the video behind the content */
+}
+
+/* Container for the content on top of the video */
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  text-align: center;
+  color: white; /* Ensure text is visible against the video */
+}
+
+/* Text styling for the main heading */
+.text-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+}
