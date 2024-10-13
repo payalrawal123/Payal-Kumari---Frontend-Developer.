@@ -1,5 +1,5 @@
 /* Fullscreen container that holds the video and content */
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -33,8 +33,44 @@ body{
 
 /* Text styling for the main heading */
 .text-container h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 72px;
+  font-weight: 500;
   margin: 0;
+  font-family: "Space Grotesk", sans-serif;
   padding: 20px;
+  margin-top: 100px;
+}
+.spantag {
+  width: Hug (419px) px;
+  height: Hug (84px) px;
+  padding: 4px 20px 4px 20px;
+  gap: 0px;
+  border-radius: 56px;
+  opacity: 0px;
+  background: rgba(176, 249, 255, 1);
+  color: black;
+}
+.p-tag {
+  color: rgba(176, 250, 255, 0.7);
+  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.o-btn {
+  width: Hug (131px) px;
+  height: Hug (44px) px;
+margin-top: 30px;
+  padding: 12px 24px 12px 24px;
+
+  border-radius: 12px;
+
+  background: rgba(139, 249, 232, 0.01);
+  box-shadow: 0px 0px 40px 0px rgba(139, 249, 232, 0.2) inset;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  backdrop-filter: blur(7.5px);
+  color: rgba(255, 255, 255, 1);
+  /* border: none; */
 }

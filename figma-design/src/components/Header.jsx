@@ -14,7 +14,9 @@ const Header = () => {
       <div className="content">
         <Navbar />
         <div className="text-container">
-          <h1>Welcome to My Website</h1>
+          <h1>When Innovation <br /> Meets <span className='spantag'>Investment</span></h1>
+          <p className='p-tag'>Empowering Trading Through Advanced Technology </p>
+          <button className='o-btn'>Open dApp</button>
         </div>
       </div>
     </div>

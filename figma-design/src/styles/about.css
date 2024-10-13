@@ -1,0 +1,80 @@
+.aboutcont {
+  width: 1, 440px;
+  height: 756px;
+  padding: 72px 0px 0px 0px;
+  background: rgb(0, 22, 29);
+}
+.h5 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+.p {
+  color: rgba(176, 250, 255, 0.7);
+  font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+.read-btn {
+  width: Fixed (108.91px) px;
+  height: Hug (40px) px;
+
+  padding: 10px 20px 10px 20px;
+  background: rgba(205, 252, 255, 1);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 12px;
+margin-left: 46%;
+margin-top: 30px;
+  box-shadow: 0px 6px 20px 0px rgba(55, 197, 229, 0.12);
+}
+.boxes{
+    width: 744px;
+height: 400px;
+margin-left: 408px;
+margin-top: 50px;
+padding: 48px 64px 48px 63px;
+background: rgba(8, 37, 42, 1);
+
+border-radius: 20px ;
+
+
+}
+.grid-card{
+    width: 617px;
+height: 304px;
+top: 48px;
+left: 63px;
+gap: 40px;
+opacity: 0px;
+/* border: 1px solid white; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+.cards{
+    width: 290px;
+height: 120px;
+gap: 12px;
+opacity: 0px;
+
+}
+.h3{
+    font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: start;
+  margin-top: 7px;
+  color: white;
+}
+.card-p{
+    margin-top: 7px;
+    color: #B0FAFFB2;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}

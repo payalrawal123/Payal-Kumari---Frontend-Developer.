@@ -5,12 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      
-      'white': '#ffffff',
-      
+    extend: {
+      fontFamily: {
+        play: ['"Play"', 'sans-serif'],
+        space: ['"Space Grotesk"', 'sans-serif'],
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
