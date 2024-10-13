@@ -1,10 +1,14 @@
 import React from "react";
 import "../styles/roadmap1.css";
-import Roadmap2 from "./Roadmap2";
-const Roadmap1 = () => {
+const Roadmap2 = () => {
   return (
-    <div className="roadmap">
-      <h3 className="h5">Roadmap</h3>
+    <div className="map">
+      <div className="img"></div>
+      {/* <img
+          src="https://media.licdn.com/dms/image/D4E12AQGlmKeU6CIEXQ/article-cover_image-shrink_600_2000/0/1688390288969?e=2147483647&v=beta&t=5PlzCPw8AtfLJ2hbCSYLCZkoCVsO1sROxgT5fNaW3bs"
+          alt=""  className="image-with-shadow"
+        /> */}
+
       <div className="phase1">
         <div className="flex1">
           <button className="phase-btn">PHASE 1</button>
@@ -58,19 +62,9 @@ const Roadmap1 = () => {
             <p class="p2">Community Engagement Initiatives</p>
           </div>
         </div>
-        <div className="img">
-
-        </div>
-        {/* <img
-          src="https://media.licdn.com/dms/image/D4E12AQGlmKeU6CIEXQ/article-cover_image-shrink_600_2000/0/1688390288969?e=2147483647&v=beta&t=5PlzCPw8AtfLJ2hbCSYLCZkoCVsO1sROxgT5fNaW3bs"
-          alt=""  className="image-with-shadow"
-        /> */}
       </div>
-      <Roadmap2/>
-      <Roadmap2/>
     </div>
-    
   );
 };
 
-export default Roadmap1;
+export default Roadmap2;

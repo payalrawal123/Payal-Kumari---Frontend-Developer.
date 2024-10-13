@@ -1,0 +1,71 @@
+.roadmap {
+  width: 1, 440px;
+  height: 2, 092px;
+  padding: 64px 0px 64px 0px;
+  background: rgb(0, 22, 29);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+.map{
+    padding: 64px 0px 64px 0px;
+  background: rgb(0, 22, 29);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500; 
+}
+.h5 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 40px;
+
+  text-align: center;
+}
+.phase1 {
+  width: 1440px;
+  height: 640px;
+  padding: 64px 120px 64px 120px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-around;
+}
+.img {
+    background: linear-gradient(180deg, #00161D 0%, rgba(0, 22, 29, 0) 37.69%),
+    linear-gradient(180deg, rgba(0, 22, 29, 0) 81.47%, #00161D 100%),
+    linear-gradient(270deg, rgba(0, 22, 29, 0) 82.85%, #00161D 100%);
+    
+    width: 700px;
+height: 600px;
+top: 0px;
+gap: 0px;
+opacity: 0px;
+/* border: 1px solid white; */
+    
+}
+.phase-btn {
+  width: Hug (71px) px;
+  height: Hug (28px) px;
+  padding: 6px 12px 6px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  opacity: 0px;
+  background: #f7f7f7;
+  margin-top: 90px;
+}
+.phase-p{
+    color: rgba(255, 255, 255, 1);
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.icon-text {
+    display: flex;
+    align-items: center; /* Vertically aligns the icon and text */
+    gap: 8px; /* Add space between the icon and the text */
+    margin-top: 20px;
+  }
+  
+  .p2 {
+     /* Remove default paragraph margin */
+    color: #EFEFE8;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  

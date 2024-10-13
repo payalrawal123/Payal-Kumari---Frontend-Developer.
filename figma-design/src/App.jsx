@@ -4,12 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import About from './components/About'
+import Roadmap1 from './components/Roadmap1'
+import Roadmap2 from './components/Roadmap2'
 
 export default function App() {
   return (
     <>
     <Header/>
     <About/>
+    <Roadmap1/>
+    {/* <Roadmap2/> */}
     </>
   )
 }
