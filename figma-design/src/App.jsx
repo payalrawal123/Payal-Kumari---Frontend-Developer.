@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import About from './components/About'
-import Roadmap1 from './components/Roadmap1'
+import Roadmap from './components/Roadmap1'
 import Frequent from './components/frequent'
 import ExploreCard from './components/ExploreCard'
 import Footer from './components/Footer'
@@ -15,7 +15,7 @@ export default function App() {
     <>
     <Header/>
     <About/>
-    <Roadmap1/>
+    <Roadmap/>
    <Frequent/>
    <ExploreCard/>
    <Footer/>
