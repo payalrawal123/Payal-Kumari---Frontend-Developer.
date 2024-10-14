@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header'
 import About from './components/About'
 import Roadmap1 from './components/Roadmap1'
+import Frequent from './components/frequent'
 
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
     <Header/>
     <About/>
     <Roadmap1/>
-    
+   <Frequent/>
     </>
   )
 }

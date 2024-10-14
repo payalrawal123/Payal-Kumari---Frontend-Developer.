@@ -1,0 +1,47 @@
+.container{
+    width: 1440px;
+  height: 640px;
+  background: #00161D;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+padding: 0px 150px 0px 150px;
+}
+
+.frequent{
+    width: 1200px;
+height: 450px;
+max-width: var(--width1200);
+padding: 60px 100px 120px 141px;
+gap: var(--itemspacing60);
+opacity: 0px;
+background: #00161D;
+/* border: 1px solid white; */
+display: flex;
+/* justify-content: space-evenly; */
+}
+.box{
+    width: 385px;
+height: 80px;
+
+}
+.ques{
+  margin: 0;
+    color: #FFFFFF;
+font-size: 40px;
+line-height: 44px;
+}
+.box2{
+    margin-left: 100px;
+   margin-top: -40px;
+}
+.points{
+    display: flex;
+margin-top: 45px;
+}
+.line{
+    color: #FFFFFF;
+font-size: 16px;
+font-weight: 300;
+/* margin-top: 15px; */
+margin-left: 10px;
+}
