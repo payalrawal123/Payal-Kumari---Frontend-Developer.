@@ -1,0 +1,19 @@
+.footer{
+    width: 1,440px;
+height: 470px;
+padding: 100px 106px 0px 66px;
+
+background: #010F14;
+display: flex;
+}
+.logo {
+   
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 22px;
+  
+    font-family: "Play", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  }
