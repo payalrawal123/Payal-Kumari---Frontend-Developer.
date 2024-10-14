@@ -31,12 +31,11 @@
     linear-gradient(180deg, rgba(0, 22, 29, 0) 81.47%, #00161D 100%),
     linear-gradient(270deg, rgba(0, 22, 29, 0) 82.85%, #00161D 100%);
     
-    width: 700px;
-height: 600px;
-top: 0px;
-gap: 0px;
-opacity: 0px;
-/* border: 1px solid white; */
+    width: 500px;
+height: 500px;
+border-radius: 20px;
+box-shadow: 10px 10px 10px rgb(69, 54, 54);
+border: 1px solid white;
     
 }
 .phase-btn {
