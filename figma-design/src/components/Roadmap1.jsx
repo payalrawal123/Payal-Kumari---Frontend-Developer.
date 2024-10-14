@@ -6,6 +6,7 @@ const Roadmap = () => {
   return (
     <>
       <div className=" mx-auto p-4 gap-8 text-white flex flex-col bg-backgrd">
+        
         <div className="flex flex-col md:flex-row w-full gap-8 mb-8">
           <div className="w-full ml-32 md:w-[50%] p-4 flex flex-col items-center justify-center gap-6">
             <div className="flex  flex-col items-center md:items-start sm:items-start custom-sm:items-start w-full">

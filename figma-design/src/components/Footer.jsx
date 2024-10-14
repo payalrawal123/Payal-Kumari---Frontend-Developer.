@@ -1,37 +1,113 @@
-import React from 'react';
-import '../styles/footer.css';
-
-const Footer = () => {
-  return (
-    <div className="footer">
-      <div className="foot1">
-        <div className="logo">
-          EthAi
-        </div>
-        {/* Make sure the SVG has a width and height */}
-        <svg 
-  xmlns="http://www.w3.org/2000/svg" 
-  viewBox="0 0 496 512"
-  width="32" 
-  height="32"
-//   fill='white'
->
-  {/* Black background */}
-  <circle cx="248" cy="256" r="248" fill="white" />
+import {
+    Box,
+    chakra,
+    Container,
+    SimpleGrid,
+    Stack,
+    VisuallyHidden,
+    useColorModeValue,
+    Flex,
+  } from "@chakra-ui/react";
+  import { FaInstagram, FaTelegramPlane, FaTwitter } from "react-icons/fa";
+  import { FaDiscord, FaFacebookF } from "react-icons/fa6";
   
-  {/* White icon path */}
-  <path 
-    d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"
-    fill="#010F14" 
-  />
-</svg>
+  const SocialButton = ({ children, label, href }) => {
+    return (
+      <chakra.button
+        bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+        rounded={"full"}
+        w={8}
+        h={8}
+        cursor={"pointer"}
+        as={"a"}
+        href={href}
+        display={"inline-flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        transition={"background 0.3s ease"}
+        _hover={{
+          bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        }}
+      >
+        <VisuallyHidden>{label}</VisuallyHidden>
+        {children}
+      </chakra.button>
+    );
+  };
+  
+  export default function Footer() {
+    return (
+      <Box className="bg-[#010e14] mt-[70px]" color={"white"}>
+        <Container as={Stack} maxW={"6xl"} py={10}>
+          <SimpleGrid
+            templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+            spacing={8}
+          >
+            <Flex spacing={20}>
 
-      </div>
-      <div className="foot2">
-        {/* Footer content */}
-      </div>
-    </div>
-  );
-};
-
-export default Footer;
+            <Stack spacing={6} align={{ base: "center", md: "flex-start" }}>
+              <Box>
+                <div className="flex items-center gap-[5px]">
+                  <div className="grid grid-cols-3 gap-[1px] p-2 max-w-max">
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg1 rounded-tr-[100px]"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-tr-[100px]"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-none"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-bl-[100px]"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg1 rounded-br-[100px]"></div>
+                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-bl-[100px]"></div>
+                  </div>
+                  <div className="text-[24px] font-bold leading-[22px] tracking-[-0.03px] text-white font-play">
+                    EthAi
+                  </div>
+                </div>
+              </Box>
+  
+              <Stack direction={"row"} spacing={6}>
+                <SocialButton label={"Twitter"} href={"#"}>
+                  <FaTelegramPlane />
+                </SocialButton>
+                <SocialButton label={"YouTube"} href={"#"}>
+                  <FaInstagram />
+                </SocialButton>
+                <SocialButton label={"Instagram"} href={"#"}>
+                  <FaTwitter />
+                </SocialButton>
+                <SocialButton label={"YouTube"} href={"#"}>
+                  <FaFacebookF />
+                </SocialButton>
+                <SocialButton label={"Instagram"} href={"#"}>
+                  <FaDiscord />
+                </SocialButton>
+              </Stack>
+            </Stack>
+            <Stack
+              align={"flex-start"}
+              spacing={4}
+              display={{ base: "none", sm: "none", md: "flex" }}
+            >
+              <h1 className="text-[32px] lg:text-[32px] md:text-[24px] font-bold text-white font-space">
+                “Designed for traders of today, just like you.”
+              </h1>
+              <div className="flex items-center">
+                <div className="relative w-[520px] md:w-[420px] h-[50px] max-w-[520px] border-[1px] border-white rounded-[12px] p-[2px]">
+                  <input
+                    type="email"
+                    placeholder="What’s your work email"
+                    className="w-full h-[44px] pl-4 pr-24 rounded-[12px] bg-footerBg text-white focus:bg-whiteAlpha-200 border-none"
+                  />
+                  <button className="absolute inset-y-0 right-0 md:right-0 h-[42px] px-6 text-white bg-dApp border border-dAppBorder rounded-[12px] hover:bg-navButtonColor hover:text-black hover:font-medium mt-1 mr-1 mb-1">
+                    Open dApp
+                  </button>
+                </div>
+              </div>
+            </Stack>
+            </Flex>
+          </SimpleGrid>
+        </Container>
+      </Box>
+    );
+  }
+  
