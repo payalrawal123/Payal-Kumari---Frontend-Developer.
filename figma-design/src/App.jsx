@@ -6,6 +6,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Roadmap1 from './components/Roadmap1'
 import Frequent from './components/frequent'
+import ExploreCard from './components/ExploreCard'
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
     <About/>
     <Roadmap1/>
    <Frequent/>
+   <ExploreCard/>
     </>
   )
 }
