@@ -1,93 +1,109 @@
 import React from "react";
-
+import { BiBarChart } from "react-icons/bi";
+import { FaScrewdriverWrench } from "react-icons/fa6";
+import { MdAccountBalanceWallet } from "react-icons/md";
+import { RiRobot2Fill } from "react-icons/ri";
+import "../styles/Feature.css";
 const About = () => {
   return (
-    <div className="w-full h-auto pt-[72px] bg-[#00161d]">
-      <h3 className="text-white text-[40px] font-medium font-spaceGrotesk text-center">
-        About EthAi
-      </h3>
-      <p className="text-[#B0FAFFB2] text-[16px] font-spaceGrotesk font-normal text-center my-[10px] px-4 md:px-0">
-        At EthAi, we’re all about making crypto trading easier and more
-        intuitive. We provide tools <br className="hidden md:inline" />
-        that help traders keep up with all new market trends, track top traders’
-        movements.
-      </p>
-      <button className="w-[108.91px] h-[40px] py-[7px] px-[10px] bg-[#cdfcff] text-black font-spaceGrotesk font-medium text-[14px] rounded-[12px] mx-auto mt-[30px] shadow-[0px_6px_20px_0px_rgba(55,197,229,0.12)] block">
-        Read More
-      </button>
+    <>
+      <div className="h-auto bg-backgrd  pb-[50px] top-[24px] flex flex-col items-center gap-6 pt-[42px]">
+        <h1 className="text-white font-space text-[40px] md:text-[40px] sm:text-[32px] font-medium text-center">
+          About EthAi
+        </h1>
+        <p className="w-[60%] text-fontColor font-space text-[14px] md:text-[16px] sm:text-[8px] font-normal text-center">
+          At EthAi, we're all about making crypto trading easier and more
+          intuitive. We provide tools that help traders keep up with all new
+          market trends, track top traders' movements
+        </p>
+        <button
+          style={{
+            boxShadow: `
+                0px 0px 1px 1px rgba(76, 221, 253, 1) inset,
+                0px 1px 1px 0px rgba(76, 221, 253, 1) inset,
+                0px 0px 4px 2px rgba(255, 255, 255, 0.12) inset,
+                0px -8px 16px -4px rgba(55, 197, 229, 0.12),
+                0px 6px 20px 0px rgba(55, 197, 229, 0.12),
+                0px 4px 12px 0px rgba(55, 197, 229, 0.12),
+                0px 4px 6px 0px rgba(55, 197, 229, 0.12),
+                0px 1px 4px 0px rgba(55, 197, 229, 0.12)
+              `,
+          }}
+          className="w-[108.91px] h-[40px] bg-navButtonColor text-black rounded-[12px]
+              hover:bg-[#76dfff] hover:text-gray-800 
+              hover:shadow-[0px_0px_5px_3px_rgba(76,221,253,1),
+                            0px_1px_2px_0px_rgba(76,221,253,1)] 
+              text-[14px] font-medium leading-[16px] tracking-[-0.12px] text-center 
+              rounded-[12px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] 
+              transition-all duration-200 ease-in-out flex  justify-center item-center"
+        >
+          Read more
+        </button>
 
-      <div className="w-full h-auto mx-auto mt-[50px] p-4 md:p-[48px] bg-[#08252A] rounded-[20px] max-w-[744px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto">
-          <div className="flex flex-col items-start gap-[12px]">
-            <span
-              className="material-symbols-outlined"
-              style={{ color: "#61f0fe" }}
-            >
-              terminal
-            </span>
-            <h3 className="font-spaceGrotesk font-medium text-[18px] text-white">
-              Stay Ahead
-            </h3>
-            <p className="text-[#B0FAFFB2] font-spaceGrotesk font-normal text-[16px]">
-              No more guesswork—get clear, trustable insights.
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-[12px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#61f0fe"
-            >
-              <path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h280v80H280v40h280v80H280v480h400v-80h80v200q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm440-240L520-600l56-56 104 104v-288h80v288l104-104 56 56-200 200ZM280-800v-40 40Zm0 640v40-40Z" />
-            </svg>
-            <h3 className="font-spaceGrotesk font-medium text-[18px] text-white">
-              Know Your Assets
-            </h3>
-            <p className="text-[#B0FAFFB2] font-spaceGrotesk font-normal text-[16px]">
-              Always stay on top of how your investments are performing.
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-[12px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#61f0fe"
-            >
-              <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v80h-80v-80H200v560h560v-80h80v80q0 33-23.5 56.5T760-120H200Zm480-160-56-56 103-104H360v-80h367L624-624l56-56 200 200-200 200Z" />
-            </svg>
-            <h3 className="font-spaceGrotesk font-medium text-[18px] text-white">
-              Simple, Not Overwhelming
-            </h3>
-            <p className="text-[#B0FAFFB2] font-spaceGrotesk font-normal text-[16px]">
-              Our tools are designed to make complex market analysis easy to
-              understand and act on.
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-[12px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#61f0fe"
-            >
-              <path d="M600-240v-80h160v80H600Zm0-320v-80h280v80H600Zm0 160v-80h240v80H600ZM120-640H80v-80h160v-60h160v60h160v80h-40v360q0 33-23.5 56.5T440-200H200q-33 0-56.5-23.5T120-280v-360Zm80 0v360h240v-360H200Zm0 0v360-360Z" />
-            </svg>
-            <h3 className="font-spaceGrotesk font-medium text-[18px] text-white">
-              Future-Proof
-            </h3>
-            <p className="text-[#B0FAFFB2] font-spaceGrotesk font-normal text-[16px]">
-              We’re constantly improving, adding new features to help you make
-              the most informed decisions possible.
-            </p>
+        <div className="main w-[60%]   rounded-[20px] bg-AboutEthAiColor mt-[40px] p-6">
+          <div className="about flex  flex-wrap items-start justify-center">
+            {/* Section 1 */}
+            <div className="flex flex-col items-start justify-start lg:w-1/2 p-8 gap-[12px] smallBox">
+              <div>
+                <BiBarChart
+                  style={{ color: "rgba(97, 240, 254, 1)", fontSize: "24px" }}
+                />
+              </div>
+              <p className="text-white font-space text-[18px] md:text-[18px] sm:text-[16px] font-medium">
+                Stay Ahead
+              </p>
+              <p className="text-fontColor font-space text-[16px] font-normal">
+                No more guesswork-get clear, trustable insights.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-start justify-start lg:w-1/2 p-6 gap-[12px] smallBox">
+              <div>
+                <MdAccountBalanceWallet
+                  style={{ color: "rgba(97, 240, 254, 1)", fontSize: "24px" }}
+                />
+              </div>
+              <p className="text-white font-space text-[18px] md:text-[18px] sm:text-[16px] font-medium">
+                Know Your Assets
+              </p>
+              <p className="text-fontColor font-space text-[16px]  font-normal">
+                Always stay on top of how your investments are performing.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-start justify-start lg:w-1/2 p-6 gap-[12px] ">
+              <div>
+                <FaScrewdriverWrench
+                  style={{ color: "rgba(97, 240, 254, 1)", fontSize: "px" }}
+                />
+              </div>
+              <p className="text-white font-space text-[18px] md:text-[18px] sm:text-[16px] font-medium">
+                Simple, Not Overwhelming
+              </p>
+              <p className="text-fontColor font-space text-[16px] font-normal">
+                Our tools are designed to make complex analysis easu to
+                understand and act on.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-start justify-start lg:lg:w-1/2 p-6 gap-[12px]">
+              <div>
+                <RiRobot2Fill
+                  style={{ color: "rgba(97, 240, 254, 1)", fontSize: "px" }}
+                />
+              </div>
+              <p className="text-white font-space text-[18px] md:text-[18px] sm:text-[16px] font-medium">
+                Future-Proof
+              </p>
+              <p className="text-fontColor font-space text-[16px] font-normal">
+                We're constantly improving, adding new features to help you make
+                the most informed decisions possible.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
