@@ -9,7 +9,7 @@ Welcome to the Saviour Project! This project is built using React and Chakra UI 
 
 ## Deplolyed App
 
-Frontend: https://figma-design-pf4i.vercel.app/ <br>
+Frontend: https://payal-kumari-frontend-developer-2bnh.vercel.app/ <br>
 
 
 
