@@ -7,7 +7,7 @@ import "../styles/Feature.css";
 const About = () => {
   return (
     <>
-      <div className="h-auto bg-backgrd  pb-[50px] top-[24px] flex flex-col items-center gap-6 pt-[82px]">
+      <div className="h-auto bg-backgrd  pb-[50px] top-[24px] flex flex-col items-center gap-6 pt-[182px]">
         <h1 className="text-white font-space text-[40px] md:text-[40px] sm:text-[32px] font-medium text-center">
           About EthAi
         </h1>

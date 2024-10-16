@@ -37,7 +37,7 @@ import {
   
   export default function Footer() {
     return (
-      <Box className="bg-[#010e14] mt-[70px]" color={"white"}>
+      <Box className="bg-[#010e14] mt-[70px]" color={"black"}>
         <Container as={Stack} maxW={"6xl"} py={10}>
           <SimpleGrid
             templateColumns={{ base: "1fr", md: "1fr 1fr" }}
