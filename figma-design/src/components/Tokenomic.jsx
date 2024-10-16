@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Feature.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+
+
 const Tokenomics = () => {
+  
+
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
   return (
     <>
       <div className="bg-backgrd h-[832px] sm:h-[832px] custom-sm:h-[832px] md:h-[832px] lg:h-[532px] xl:h-[532px] max-h-[832px] pt-[50px] pb-[50px] lg:mb-[0px]">
@@ -11,7 +20,7 @@ const Tokenomics = () => {
         <div className="mt-10 flex tokenomicsData justify-between items-center w-full">
           {" "}
           {/* Flex container with 100% width */}
-          <div className="flex justify-center items-center w-[50%] relative">
+          <div className="flex justify-center items-center w-[50%] relative" data-aos="fade-up">
             {/* 50% width for donut chart */}
             <svg
               width="300"
@@ -97,7 +106,7 @@ const Tokenomics = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%] flex flex-col items-center justify-center">
+          <div data-aos="fade-down" className="w-[50%] flex flex-col items-center justify-center">
             <div className="blockchain  flex w-[80%] md:w-[80%] xl:w-[80%] sm:w-[120%] lg:w-[80%] custom-sm:w-[160%] gap-2 bg-navColor backdrop-blur-[15px] rounded-[20px] p-4 text-white text-[16px] font-space font-normal ">
               <div className="flex flex-col custom-sm:ml-6 custom-sm:mr-0 sm:ml-12 sm:mr-12 lg:ml-12 lg:mr-12 md:ml-12 md:mr-12 ml-12 mr-12 ml-12 mr-12 gap-2">
                 <div>Name</div>

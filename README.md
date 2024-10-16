@@ -13,7 +13,6 @@ This repository hosts the implementation of a landing page derived from a Figma 
 Frontend: https://payal-kumari-frontend-developer-2bnh.vercel.app/ <br>
 
 
-Frontend: (https://payal-kumari-frontend-developer-2bnh.vercel.app/)<br>
 
 ## Features
 1.Navbar: The navigation bar provides easy access to different parts of the landing page.

@@ -11,6 +11,9 @@ const Roadmap = () => {
   return (
     <>
       <div className="mx-auto p-4 gap-8 text-white flex flex-col bg-backgrd">
+      <h1 className="text-white font-space text-[40px] font-medium text-center mb-8">
+          Roadmap
+        </h1>
         {/* PHASE 1 */}
         <div className="flex flex-col md:flex-row w-full gap-8 mb-8">
           <div
