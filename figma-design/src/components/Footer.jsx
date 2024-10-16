@@ -1,113 +1,142 @@
 import {
-    Box,
-    chakra,
-    Container,
-    SimpleGrid,
-    Stack,
-    VisuallyHidden,
-    useColorModeValue,
-    Flex,
-  } from "@chakra-ui/react";
-  import { FaInstagram, FaTelegramPlane, FaTwitter } from "react-icons/fa";
-  import { FaDiscord, FaFacebookF } from "react-icons/fa6";
-  
-  const SocialButton = ({ children, label, href }) => {
-    return (
-      <chakra.button
-        bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-        rounded={"full"}
-        w={8}
-        h={8}
-        cursor={"pointer"}
-        as={"a"}
-        href={href}
-        display={"inline-flex"}
-        alignItems={"center"}
-        justifyContent={"center"}
-        transition={"background 0.3s ease"}
-        _hover={{
-          bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
-        }}
-      >
-        <VisuallyHidden>{label}</VisuallyHidden>
-        {children}
-      </chakra.button>
-    );
-  };
-  
-  export default function Footer() {
-    return (
-      <Box className="bg-[#010e14] mt-[70px]" color={"black"}>
-        <Container as={Stack} maxW={"6xl"} py={10}>
-          <SimpleGrid
-            templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-            spacing={8}
-          >
-            <Flex spacing={20}>
+  Box,
+  chakra,
+  Container,
+  SimpleGrid,
+  Stack,
+  VisuallyHidden,
+  Flex,
+  Heading,
+  Input,
+  Button,
+  useColorModeValue
+} from "@chakra-ui/react";
+import { FaInstagram, FaTelegramPlane, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaFacebookF } from "react-icons/fa6";
 
-            <Stack spacing={6} align={{ base: "center", md: "flex-start" }}>
-              <Box>
-                <div className="flex items-center gap-[5px]">
-                  <div className="grid grid-cols-3 gap-[1px] p-2 max-w-max">
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg1 rounded-tr-[100px]"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-tr-[100px]"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-none"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-bl-[100px]"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg1 rounded-br-[100px]"></div>
-                    <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-bl-[100px]"></div>
-                  </div>
-                  <div className="text-[24px] font-bold leading-[22px] tracking-[-0.03px] text-white font-play">
-                    EthAi
-                  </div>
-                </div>
-              </Box>
-  
-              <Stack direction={"row"} spacing={6}>
-                <SocialButton label={"Twitter"} href={"#"}>
-                  <FaTelegramPlane />
-                </SocialButton>
-                <SocialButton label={"YouTube"} href={"#"}>
-                  <FaInstagram />
-                </SocialButton>
-                <SocialButton label={"Instagram"} href={"#"}>
-                  <FaTwitter />
-                </SocialButton>
-                <SocialButton label={"YouTube"} href={"#"}>
-                  <FaFacebookF />
-                </SocialButton>
-                <SocialButton label={"Instagram"} href={"#"}>
-                  <FaDiscord />
-                </SocialButton>
-              </Stack>
-            </Stack>
-            <Stack
-              align={"flex-start"}
-              spacing={4}
-              display={{ base: "none", sm: "none", md: "flex" }}
-            >
-              <h1 className="text-[32px] lg:text-[32px] md:text-[24px] font-bold text-white font-space">
-                “Designed for traders of today, just like you.”
-              </h1>
-              <div className="flex items-center">
-                <div className="relative w-[520px] md:w-[420px] h-[50px] max-w-[520px] border-[1px] border-white rounded-[12px] p-[2px]">
-                  <input
-                    type="email"
-                    placeholder="What’s your work email"
-                    className="w-full h-[44px] pl-4 pr-24 rounded-[12px] bg-footerBg text-white focus:bg-whiteAlpha-200 border-none"
-                  />
-                  <button className="absolute inset-y-0 right-0 md:right-0 h-[42px] px-6 text-white bg-dApp border border-dAppBorder rounded-[12px] hover:bg-navButtonColor hover:text-black hover:font-medium mt-1 mr-1 mb-1">
-                    Open dApp
-                  </button>
-                </div>
+const SocialButton = ({ children, label, href }) => {
+  return (
+    <chakra.button
+      bg={"blackAlpha.100" }
+      rounded={"full"}
+      w={8}
+      h={8}
+      cursor={"pointer"}
+      as={"a"}
+      href={href}
+      display={"inline-flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      transition={"background 0.3s ease"}
+      _hover={{
+        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+      }}
+    >
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </chakra.button>
+  );
+};
+
+export default function Footer() {
+  return (
+    <Box bg={"#010e14"} color={"white"} mt={10} py={10}>
+      <Container as={Stack} maxW={"6xl"}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2 }}
+          spacing={8}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+        >
+          <Flex direction="column" spacing={6}>
+            {/* Logo Section */}
+            <Flex align="center" gap={3}>
+              <div className="grid grid-cols-3 gap-[1px] p-2 max-w-max">
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg1 rounded-tr-[100px]"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-tr-[100px]"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-none"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg2"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-bl-[100px]"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg1 rounded-br-[100px]"></div>
+                <div className="w-[11.31px] h-[11.31px] bg-logoBg2 rounded-bl-[100px]"></div>
               </div>
-            </Stack>
+              <Heading as="h2" size="lg" className="text-white font-play">
+                EthAi
+              </Heading>
             </Flex>
-          </SimpleGrid>
-        </Container>
-      </Box>
-    );
-  }
-  
+
+            {/* Social Icons */}
+            <Stack direction={"row"} spacing={6} mt={5}>
+              <SocialButton label={"Telegram"} href={"#"}>
+                <FaTelegramPlane />
+              </SocialButton>
+              <SocialButton label={"Instagram"} href={"#"}>
+                <FaInstagram />
+              </SocialButton>
+              <SocialButton label={"Twitter"} href={"#"}>
+                <FaTwitter />
+              </SocialButton>
+              <SocialButton label={"Facebook"} href={"#"}>
+                <FaFacebookF />
+              </SocialButton>
+              <SocialButton label={"Discord"} href={"#"}>
+                <FaDiscord />
+              </SocialButton>
+            </Stack>
+          </Flex>
+
+          {/* Call to Action Section */}
+          <Stack spacing={4} maxW={"md"} align={"flex-start"}>
+            <Heading
+              as="h3"
+              size="md"
+              className="font-space"
+              textAlign={{ base: "center", md: "left" }}
+              mb={4}
+            >
+              “Designed for traders of today, just like you.”
+            </Heading>
+            <Flex
+              direction="column"
+              width="100%"
+              as="form"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <Flex alignItems="center" w="100%">
+                <Input
+                  placeholder="What’s your work email"
+                  type="email"
+                  bg="whiteAlpha.300"
+                  border={0}
+                  color="white"
+                  _placeholder={{
+                    color: "whiteAlpha.600",
+                  }}
+                  rounded="md"
+                  w="full"
+                  p={4}
+                />
+                <Button
+                  bg="#CDFCFF"
+                  color="black"
+                  _hover={{
+                    bg: "blue.200",
+                  }}
+                  rounded="md"
+                  ml={3}
+                  h="full"
+                  p={4}
+                  type="submit"
+                >
+                  Open dApp
+                </Button>
+              </Flex>
+            </Flex>
+          </Stack>
+        </SimpleGrid>
+      </Container>
+    </Box>
+  );
+}

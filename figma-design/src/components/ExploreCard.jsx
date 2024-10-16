@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const ExploreCard = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
   return (
     <div className="bg-backgrd w-full h-auto px-6 sm:px-12 md:px-24 py-12 font-space">
-      <div className="w-full max-w-[960px] h-auto p-8 sm:p-10 md:p-14 gap-6 rounded-[20px] bg-[#011c24] shadow-inner shadow-[#63f2ff1a] mx-auto">
+      <div  data-aos="zoom-in" className="w-full max-w-[960px] h-auto p-8 sm:p-10 md:p-14 gap-6 rounded-[20px] bg-[#011c24] shadow-inner shadow-[#63f2ff1a] mx-auto">
         <p className="text-[24px] sm:text-[32px] md:text-[40px] leading-[28px] sm:leading-[36px] md:leading-[44px] text-white text-center">
           Explore Our <span className="text-[#62f0fe]">dApp</span>
         </p>
