@@ -1,19 +1,163 @@
-.footer{
-    width: 1,440px;
-height: 470px;
-padding: 100px 106px 0px 66px;
-
-background: #010F14;
-display: flex;
-}
-.logo {
-   
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 22px;
-  
-    font-family: "Play", sans-serif;
-  font-weight: 700;
-  color: #FFFFFF;
-
+.footer {
+    background-color: #010e14;
+    color: white;
+    padding-top: 70px;
+    padding: 40px 0;
   }
+  
+  .container {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-grid {
+    display: flex;
+    gap: 400px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+  }
+  
+  .footer-left,
+  .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 11.31px);
+    grid-gap: 1px;
+    padding: 2px;
+  }
+  
+  .logo-square {
+    width: 11.31px;
+    height: 11.31px;
+  }
+  
+  .bg-logoBg2 {
+    background-color:  #1ADEF5;
+    ;
+  }
+  
+  .bg-logoBg1 {
+    background-color:  #1E808C;
+    ;
+    
+  }
+  
+  .rounded-tr {
+    border-top-right-radius: 100px;
+  }
+  
+  .rounded-bl {
+    border-bottom-left-radius: 100px;
+  }
+  
+  .rounded-br {
+    border-bottom-right-radius: 100px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: -0.03px;
+    font-family: 'Play', sans-serif;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer-right {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  .footer-heading {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .email-input-wrapper {
+    position: relative;
+    width: 520px;
+    max-width: 100%;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 2px;
+  }
+  
+  .email-input {
+    width: calc(100% - 100px);
+    height: 44px;
+    padding-left: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  .email-input:focus {
+    outline: none;
+  }
+  
+  .dapp-button {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    bottom: 2px;
+    padding: 0 20px;
+    background: #8BF9E803;
+    box-shadow: 0px 0px 40px 0px #8BF9E833 inset;
+
+    backdrop-filter: blur(7.5px);
+    
+    /* background-color: #ff9900; */
+    border: 1px solid #8BF9E801;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dapp-button:hover {
+    background-color: #ffcc33;
+    color: black;
+  }
+  
